@@ -434,6 +434,8 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .portfolio_item {
@@ -490,7 +492,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 0 0 0;
+  margin: 1em 0 0;
   padding: 0;
 }
 
@@ -500,4 +502,20 @@ header {
 
 .social-list_link {
   padding: 0 0.5em;
+}
+
+/*******************************************************/
+/******************* Portfolio Items *******************/
+/*******************************************************/
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
