@@ -15,10 +15,9 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #3FD2C7;
+  --clr-accent: #3fd2c7;
 
   /* base
   --clr-light: #fff;
@@ -48,10 +47,8 @@
 /******************* General styles *******************/
 /******************************************************/
 
-
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -97,7 +94,7 @@ img {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 500ms ease-in-out;
-  outline:none;
+  outline: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -188,7 +185,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  outline:none;
+  outline: none;
 
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
@@ -210,7 +207,7 @@ header {
   font-weight: var(--fw-bold);
   font-size: var(--fs-h2);
   text-decoration: none;
-  outline:none;
+  outline: none;
 }
 
 .nav_link:hover {
@@ -218,38 +215,36 @@ header {
 }
 
 .nav_toggle {
-    padding: 0.5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
-    outline:none;
-  }
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1000;
+  outline: none;
+}
 
 .nav_open .nav {
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .nav_open .nav_toggle {
-    position: fixed;
+  position: fixed;
 }
 
 .nav_open .hamburger {
-    transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav_open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-6px);
 }
 
 .nav_open .hamburger::after {
-    opacity: 0;
+  opacity: 0;
 }
-
-
 
 .hamburger {
   display: block;
@@ -338,7 +333,6 @@ header {
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
-  
 }
 
 .section_title--services {
@@ -359,16 +353,6 @@ header {
 .services {
   margin-bottom: 2em;
 }
-
- /*
-grid-template-columns: 1fr 400px;
-grid-template-areas:
-  "title img"
-  "subtitle img"
-  "text img"
-  "text2 img";
-grid-column-gap: 2em;
-*/
 
 .service {
   max-width: 500px;
@@ -391,28 +375,22 @@ grid-column-gap: 2em;
     grid-template-areas:
       "service1 service2 service3"
       "button button button";
-    grid-column-gap: 2em;
+    grid-column-gap: 2.3em;
   }
 
-.service1 {
-  grid-area: service1;
-}
+  .service1 {
+    grid-area: service1;
+  }
 
-.service2 {
-  grid-area: service2;
-}
+  .service2 {
+    grid-area: service2;
+  }
 
-.service3 {
-  grid-area: service3;
-}
-
-
- /*
-  .service + .service {
-    margin-left: 2em;
+  .service3 {
+    grid-area: service3;
   }
 }
-*/
+
 /********************************************************/
 /****************** About Me Section ********************/
 /********************************************************/
@@ -549,13 +527,13 @@ grid-column-gap: 2em;
 /*******************************************************/
 
 .portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
