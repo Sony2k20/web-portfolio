@@ -15,10 +15,16 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #3FD2C7;
+
+  /* base
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #18e0bd;
-
+*/
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -434,7 +440,7 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 1200px;
+  max-width: 1190px;
   margin: 0 auto;
 }
 
