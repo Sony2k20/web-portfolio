@@ -548,4 +548,14 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.portfolio-item-individual ul {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 10px;
 }
