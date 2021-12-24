@@ -400,6 +400,11 @@ header {
   margin: 0 auto;
 }
 
+.about-me_body {
+  hyphens: auto;
+  text-align: justify;	
+}
+
 .about-me_img {
   box-shadow: var(--bs);
 }
@@ -439,6 +444,9 @@ header {
   }
 }
 
+
+
+
 /***********************************************/
 /****************** My Work ********************/
 /***********************************************/
@@ -454,15 +462,18 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1190px;
   margin: 0 auto;
+  
 }
 
 .portfolio_item {
   background: var(--clr-light);
   overflow: hidden;
+  
 }
 
 .portfolio_img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  transform: scale(1.02)
 }
 
 .portfolio_item:focus {
@@ -495,6 +506,7 @@ header {
 
 .footer_link {
   font-weight: var(--fw-bold);
+  text-decoration: none
 }
 
 .footer_link:hover,
