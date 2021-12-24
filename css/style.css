@@ -442,6 +442,7 @@ header {
     z-index: 2;
     position: relative;
   }
+
 }
 
 
@@ -461,8 +462,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   max-width: 1190px;
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .portfolio_item {
@@ -487,6 +487,16 @@ header {
   opacity: 0.7;
 }
 
+
+@media (max-width: 750px) {
+  .portfolio a{
+    grid-column: 1;
+    margin-bottom: 20px;
+  }
+
+  
+}
+
 /**********************************************/
 /******************* Footer *******************/
 /**********************************************/
@@ -495,7 +505,7 @@ header {
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 3.5em 0;
   font-size: var(--fs-h3);
 }
 
