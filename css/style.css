@@ -656,6 +656,46 @@ header {
 .section_title--skills {
   color: var(--clr-accent);
   position: relative;
+  padding-bottom: 15px;
+}
+
+.skills-container {
+  max-width: 1140px; 
+  text-align: center; 
+  margin: auto;
+  grid-template-columns: auto;
+  display: grid;
+}
+
+.skill-box-container {
+  padding: 0 20px;
+  padding-bottom: 20px ;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.skill-box {
+  border: 3px solid;
+  border-style:double;
+  width: 300px;
+  height: 100px;
+  max-width: 300px;
+  /* background-color: var(--clr-accent); */
+  box-shadow: #3fd2c7 0px 3px 8px;
+  transition: .5s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.08)
+
+}
+
+.skill-text {
+    margin-top: 19px;
+    text-align: center;
+    
+
 }
 
 @media (min-width: 900px) {
@@ -672,7 +712,21 @@ header {
   .section_title--education {
     text-align: center;
   }
+  .skills-container {
+    max-width: 1140px; 
+    grid-template-columns: auto auto;
+    display: grid;
+  }
+  .skill-box {
+    padding: 0 60px;
+    width: 400px;
+    max-width: 600px;
+  }
+    
 }
+
+
+
 
 
 /*================================== TIMELINE ==================================*/
