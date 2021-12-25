@@ -46,17 +46,18 @@
 <body>
     <header>
         <div class="logo">
-            <a href="/"><img  src="img/devson.png" alt="picture of text with devjane"></a>  
+            <a href="index.html"><img  src="img/devson.png" alt="picture of text with devjane"></a>  
         </div>
         <button class="nav_toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav_list">
-                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                <li class="nav_item"><a href="#services" class="nav_link">My Services</a></li>
-                <li class="nav_item"><a href="#about" class="nav_link">About me</a></li>
-                <li class="nav_item"><a href="#work" class="nav_link">My Work</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="index.html#services" class="nav_link">My Services</a></li>
+                <li class="nav_item"><a href="index.html#about" class="nav_link">About me</a></li>
+                <li class="nav_item"><a href="resume.html" class="nav_link">My Resume</a></li>
+                <li class="nav_item"><a href="index.html#work" class="nav_link">My Work</a></li>
             </ul>
         </nav>
     </header>
@@ -104,6 +105,7 @@
         </div>
         <a href="#work" class="btn">My Work</a>
         <div class="space_under_work_btn"></div>
+
     </section>
 
 
@@ -128,10 +130,11 @@
         </div>
 
         <img data-aos="fade-right" src="img/monkey.jpg" alt="Son leaning against a bus" class="about-me_img">
-        <a href="#work" class="btn">My Work</a>
+    </section>
+    <section class="resumee">
+        <a href="resume.html" class="btn">My Resume</a>
         <div class="space_under_work_btn"></div>
     </section>
-
 
     <!-- My Work -->
     <section  class="my-work" id="work">
@@ -142,16 +145,28 @@
             <!-- Portfolio item 01 -->
             <a  data-aos="fade-up"  href="portfolio-item1.html" class="portfolio_item">
                 <img src="img/portfolio-01.jpg" alt="" class="portfolio_img">
+
+                <div class="portfolio_item_overlay">
+                    <h3 class="portfolio_item_overlay_text">Angular/NestJs <br>
+                        Web Form Application</h3>
+                  </div>
+                  
             </a>
 
             <!-- Portfolio item 02 -->
             <a data-aos="fade-up" href="portfolio-item2.html" class="portfolio_item">
                 <img src="img/portfolio-02.jpg" alt="" class="portfolio_img">
+                <div class="portfolio_item_overlay">
+                    <h3 class="portfolio_item_overlay_text">Angular Web <br> Blog Application</h3>
+                  </div>
             </a>
 
             <!-- Portfolio item 03 -->
             <a data-aos="fade-up" href="portfolio-item3.html" class="portfolio_item">
                 <img src="img/portfolio-03.jpg" alt="" class="portfolio_img">
+                <div class="portfolio_item_overlay">
+                    <h3 class="portfolio_item_overlay_text">Ansible VM <br> Provisioning Automation</h3>
+                  </div>
             </a>
 
         </div>
