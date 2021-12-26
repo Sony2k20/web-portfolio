@@ -10,40 +10,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Update with differnts fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
         rel="stylesheet">
 
-     <!-- aos -->     
-     <link rel="stylesheet" href="css/aos.css">
-         
-     <!-- favicon -->    
-     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-     <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-     <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-     <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-     <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-     <link rel="manifest" href="favicon/manifest.json">
-     <meta name="msapplication-TileColor" content="#ffffff">
-     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-     <meta name="theme-color" content="#ffffff">    
+    <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img  src="img/devson.png" alt="picture of text with devjane"></a>   
+            <a href="index.html"><img src="img/devson.png" alt="picture of text with devjane"></a>
         </div>
         <button class="nav_toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -62,23 +62,19 @@
     <!-- Introduction -->
     <section data-aos="fade-right" class="intro">
         <h1 class="section_title section_title--intro">
-            Angular/NestJs <strong>Web Application</strong>
+            Angular/NestJs/MongoDB <strong>Three-Tier Application</strong>
         </h1>
-        <p class="section_subtitle section_subtitle--intro">Project Riddle</p>
+        <p class="section_subtitle section_subtitle--intro">Designing a form based website</p>
         <img src="img/portfolio-01.jpg" alt="picture of portfoli o1" class="intro_img">
     </section>
 
     <div class="portfolio-item-individual">
-        <p>The application of Project Riddle is a three-tier Angular, NestJS and MongoDB web
-            application which
-            contains of two services. The purpose of the first one is to retrieve information of a virtual machine by a
-            given address
-            or hostname. The asset data will be retrievied and processed both from an Oracle CMDB and from the live
-            system itself. In the latter case a Python micro service was created to build a remote
-            connection to Windows
-            and Linux systems.
+        <p>The application of this project is a three-tier <strong>Angular, NestJS and MongoDB</strong> web application
+            which contains of two services. The purpose of the first one is to retrieve information of a virtual machine
+            by a given IP address or hostname. The asset data will be retrievied and processed both from an Oracle CMDB and
+            from the live system itself. In the latter case a <strong>Python</strong> micro service was created to build
+            a remote connection to Windows and Linux systems.
         </p>
-
         <p>
             The second service provides a form based completion aid for various business transactions regarding the
             change or creation of virtual machines. Due to the repetitiveness of used forms a module based approached
@@ -87,20 +83,21 @@
             changes like triggering an order directly in the specific system are planned in the future.
         </p>
         <p>
-            To support the approach of Continuous Integration and Continuous Delivery a Gitlab pipeline was implemented.
-            In the pipeline a container deployment with automatic tests will be triggered after a new code was commited.
+            To support the approach of <strong>Continuous Integration and Continuous Delivery (CI/CD)</strong> a
+            <strong>Gitlab pipeline</strong> was implemented. In the pipeline a <strong>Podman</strong> container
+            deployment with automatic Cypress End-to-End tests will be triggered after a new code was commited. For the
+            infrastructure preparation the infrastructure as code approach with <strong>Ansible</strong> playbooks was used.
         </p>
         <p>The main facts are summarized as follows: </p>
         <ul>
-            <li>Three-Tier web application with <strong>Angular, NestJS and MongoDB</strong></li>
+            <li>Three-Tier web application with Angular, NestJS and MongoDB</li>
             <li>Main service consits of data processing, form aid and PDF-Export</li>
-            <li><strong>Python</strong> micro service for retrieving live data from Linux and Windows virtual machines
+            <li>Python micro service for retrieving live data from Linux and Windows virtual machines
             </li>
-            <li>Infrastructure was set up with <strong>Ansible</strong> playbooks</li>
-            <li><strong>Gitlab CI/CD pipeline</strong> with Cypress test automation and <strong>Podman</strong>
-                container deployment</li>
+            <li>Infrastructure was set up with Ansible playbooks</li>
+            <li>Gitlab CI/CD pipeline with Cypress test automation and Podman container deployment</li>
         </ul>
-        
+
     </div>
 
 
@@ -125,7 +122,8 @@
                 </a>
             </li>
             <li class="social-list_item">
-                <a class="social-list_link" href="https://www.linkedin.com/in/cong-son-nguyen-8a86b520b/" target="_blank">
+                <a class="social-list_link" href="https://www.linkedin.com/in/cong-son-nguyen-8a86b520b/"
+                    target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
@@ -140,7 +138,7 @@
     <script src="js/index.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 
 </body>
 
