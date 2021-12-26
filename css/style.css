@@ -804,11 +804,13 @@ header {
 }
 
 .timeline-item:hover .timeline-content {
-  transform: scale(1.05);
+  /* transform: scale(1.0); */
+  transform: translateY(12px);
 }
 
 .timeline-item .timeline-content {
   transition: transform .3s; 
+  /* transform: scale(.95); */
 }
 
 /*----- TIMELINE CONTENT -----*/
