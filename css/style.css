@@ -143,6 +143,8 @@ h3 {
   display: block;
 }
 
+
+
 .section_subtitle {
   margin: 0;
   font-size: var(--fs-h3);
@@ -168,6 +170,16 @@ h3 {
   margin-bottom: 1em;
 }
 
+.section_title--intro div {
+  /* Makes Name on extra line */
+  display: block;
+}
+@media (max-width: 700px) {
+  .section_title--intro div {
+    /* Makes Name on extra line */
+    display: block;
+  }
+}
 /**********************************************/
 /******************* Header *******************/
 /**********************************************/
@@ -602,6 +614,15 @@ header {
   margin-right: auto;
   text-align: justify;
   hyphens: none;
+}
+
+.portfolio-item-individual p a{
+  text-decoration: none;
+}
+
+.portfolio-item-individual p a:hover{
+  text-decoration: none;
+  color: var(--clr-accent);
 }
 
 .portfolio-item-individual ul {
