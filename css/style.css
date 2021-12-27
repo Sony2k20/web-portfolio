@@ -600,8 +600,8 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  hyphens: auto;
   text-align: justify;
+  hyphens: none;
 }
 
 .portfolio-item-individual ul {
