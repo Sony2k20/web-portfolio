@@ -1,0 +1,23 @@
+name: Pipeline Test 1
+run-name: Pipeline Test 1
+on:
+  pull_request:
+   paths:
+     - 'css/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Testing 1
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+      - uses: actions/checkout@v3.0.2
+        with:
+          ref: '${{ env.GITHUB_BASE_REF }}'
+
+      - name: Echo
+        run: |
+          echo ${{ github.ref }}

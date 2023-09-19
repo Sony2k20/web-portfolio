@@ -1,0 +1,19 @@
+name: Pipeline Test 2
+run-name: Pipeline Test 2
+on:
+  pull_request:
+   paths:
+     - 'js/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Testing 2
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+      - uses: actions/checkout@v3.0.2
+        with:
+          ref: '${{ env.GITHUB_BASE_REF }}'
